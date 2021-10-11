@@ -4,9 +4,13 @@ import java.util.ArrayList;
 
 public class Hand implements IHand {
 
+
+
     private ArrayList<Card> handOfCards;
     private int value;
     private String name;
+
+
 
 
     public Hand(String name){
@@ -19,7 +23,7 @@ public class Hand implements IHand {
 
     public void addCard(Card card){
         this.handOfCards.add(card);
-        System.out.println(this.handOfCards.size());
+
     }
 
     public int getValue() {
@@ -32,5 +36,13 @@ public class Hand implements IHand {
 
     public int getSize(){
         return this.handOfCards.size();
+    }
+
+    public ArrayList<Card> getHandOfCards() {
+        return handOfCards;
+    }
+
+    public String getName() {
+        return name;
     }
 }

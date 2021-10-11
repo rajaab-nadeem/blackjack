@@ -10,8 +10,11 @@ public class App
 {
     public static void main( String[] args ){
 
+   IHand dealer= new Hand("dealer");
+   IHand player= new Hand("Roberto");
    IDeck deck = new Deck();
-   deck.shuffle();
+   IBlackJackLogic game1 = new BlackJackLogic(deck,dealer,player);
+   game1.startingMove();
 
 
 

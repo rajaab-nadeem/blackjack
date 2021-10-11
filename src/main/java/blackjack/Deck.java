@@ -40,10 +40,7 @@ public class Deck implements IDeck {
 
         }
 
-        for (Card card : deckOfCards) {
-            System.out.println(card.showCard());
-        }
-        System.out.println(deckOfCards.size());
+
 
     }
 
@@ -59,9 +56,7 @@ public class Deck implements IDeck {
     public void shuffle() {
 
         Collections.shuffle(this.deckOfCards);
-        for (Card card : deckOfCards) {
-            System.out.println(card.showCard());
-        }
+
 
     }
 
