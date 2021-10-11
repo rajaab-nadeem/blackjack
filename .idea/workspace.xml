@@ -5,12 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1611d773-d261-4446-af0d-0ce75710db76" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/blackjack/Card.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/blackjack/Deck.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/blackjack/ICard.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/blackjack/IDeck.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/blackjack/CardTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/blackjack/DeckTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/blackjack/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/blackjack/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/blackjack/Deck.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/blackjack/Deck.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,8 +17,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>

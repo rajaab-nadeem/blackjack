@@ -8,9 +8,27 @@ public class Deck implements IDeck{
     private ArrayList<String> suits;
 
 
-    public Deck(ArrayList<String> ranks, ArrayList<String> suits){
-        this.ranks=ranks;
-        this.suits=suits;
+    public Deck(){
+        ArrayList<String> suits=new ArrayList<String>();
+        suits.add("Two");
+        suits.add("Three");
+        suits.add("Four");
+        suits.add("Five");
+        suits.add("Six");
+        suits.add("Seven");
+        suits.add("Eight");
+        suits.add("Nine");
+        suits.add("Ten");
+        suits.add("Jack");
+        suits.add("Queen");
+        suits.add("King");
+        suits.add("Ace");
+
+        ArrayList<String> ranks=new ArrayList<String>();
+        ranks.add("Hearts");
+        ranks.add("Diamonds");
+        ranks.add("Spades");
+        ranks.add("Clubs");
 
         ArrayList<Card> deckOfCards = new ArrayList<Card>();
         for(String rank:ranks){
@@ -25,6 +43,7 @@ public class Deck implements IDeck{
         for(Card card:deckOfCards){
             System.out.println(card.showCard());
         }
+        System.out.println(deckOfCards.size());
 
     }
     
