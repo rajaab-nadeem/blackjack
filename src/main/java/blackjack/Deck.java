@@ -9,26 +9,26 @@ public class Deck implements IDeck{
 
 
     public Deck(){
-        this.suits=new ArrayList<String>();
-        suits.add("Two");
-        suits.add("Three");
-        suits.add("Four");
-        suits.add("Five");
-        suits.add("Six");
-        suits.add("Seven");
-        suits.add("Eight");
-        suits.add("Nine");
-        suits.add("Ten");
-        suits.add("Jack");
-        suits.add("Queen");
-        suits.add("King");
-        suits.add("Ace");
-
         this.ranks=new ArrayList<String>();
-        ranks.add("Hearts");
-        ranks.add("Diamonds");
-        ranks.add("Spades");
-        ranks.add("Clubs");
+        ranks.add("Two");
+        ranks.add("Three");
+        ranks.add("Four");
+        ranks.add("Five");
+        ranks.add("Six");
+        ranks.add("Seven");
+        ranks.add("Eight");
+        ranks.add("Nine");
+        ranks.add("Ten");
+        ranks.add("Jack");
+        ranks.add("Queen");
+        ranks.add("King");
+        ranks.add("Ace");
+
+        this.suits=new ArrayList<String>();
+        suits.add("Hearts");
+        suits.add("Diamonds");
+        suits.add("Spades");
+        suits.add("Clubs");
 
         this.deckOfCards = new ArrayList<Card>();
         for(String rank:ranks){
