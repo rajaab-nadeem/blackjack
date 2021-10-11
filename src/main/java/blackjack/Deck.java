@@ -1,6 +1,8 @@
 package blackjack;
 
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Random;
 
 public class Deck implements IDeck{
     private ArrayList<Card> deckOfCards;
@@ -56,7 +58,12 @@ public class Deck implements IDeck{
     }
 
 
-    public void shuffle(){
+    public void shuffle() {
+
+Collections.shuffle(this.deckOfCards);
+        for(Card card:deckOfCards){
+            System.out.println(card.showCard());
+        }
 
     }
 

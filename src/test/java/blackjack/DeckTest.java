@@ -1,4 +1,4 @@
-package blackjack;
+ package blackjack;
 
 import org.junit.Test;
 import static org.junit.Assert.*;
@@ -19,5 +19,14 @@ public class DeckTest {
         //Then the deck will have 51 cards
         int newSize= deck.getSize();
         assertEquals(51,newSize);
+    }
+
+    @Test
+    public void deckTestafterShuffle(){
+
+        IDeck deck = new Deck();
+
+        deck.shuffle();
+
     }
 }
