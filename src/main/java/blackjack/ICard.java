@@ -6,4 +6,5 @@ public interface ICard {
     int getValue();
     void setValue(int value);
     String getRank();
+    String getSuit();
 }

@@ -35,4 +35,8 @@ public class Card implements ICard {
     public String getRank() {
         return this.rank;
     }
+
+    public String getSuit() {
+        return this.suit;
+    }
 }
