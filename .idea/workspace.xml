@@ -5,13 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1611d773-d261-4446-af0d-0ce75710db76" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/blackjack/IHand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/blackjack/HandTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/blackjack/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/blackjack/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/blackjack/Card.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/blackjack/Card.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/blackjack/Hand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/blackjack/Hand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/blackjack/ICard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/blackjack/ICard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/blackjack/DeckTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/blackjack/DeckTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,7 +48,7 @@
       <recent name="blackjack" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.HandTest">
+  <component name="RunManager" selected="Application.App">
     <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="blackjack.App" />
       <module name="blackjack" />
@@ -62,21 +58,6 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CardTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="blackjack" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="blackjack.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="blackjack" />
-      <option name="MAIN_CLASS_NAME" value="blackjack.CardTest" />
-      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -127,13 +108,27 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="blackjack in blackjack" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="blackjack" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="blackjack.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="blackjack" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.HandTest" />
         <item itemvalue="Application.App" />
+        <item itemvalue="JUnit.blackjack in blackjack" />
+        <item itemvalue="JUnit.HandTest" />
         <item itemvalue="JUnit.DeckTest" />
         <item itemvalue="JUnit.DeckTest.deckSizeTest" />
-        <item itemvalue="JUnit.CardTest" />
       </list>
     </recent_temporary>
   </component>

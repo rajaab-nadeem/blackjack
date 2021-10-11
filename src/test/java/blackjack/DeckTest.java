@@ -17,6 +17,7 @@ public class DeckTest {
         deck.deal();
 
         //Then the deck will have 51 cards
+
         int newSize= deck.getSize();
         assertEquals(51,newSize);
     }
@@ -24,9 +25,19 @@ public class DeckTest {
     @Test
     public void deckTestafterShuffle(){
 
+        //Given I have a new deck of cards with the card on top being "The Ace of Clubs"
+
         IDeck deck = new Deck();
 
+
+        //When I shuffle the deck of cards
+
         deck.shuffle();
+
+        //Then the card on top is not "The Ace of Clubs"
+
+
+
 
     }
 }
