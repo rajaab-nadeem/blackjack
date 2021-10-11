@@ -4,5 +4,6 @@ public interface IDeck {
     
 
     void shuffle();
-    String deal();
+    Card deal();
+    int getSize();
 }

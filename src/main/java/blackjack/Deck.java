@@ -9,7 +9,7 @@ public class Deck implements IDeck{
 
 
     public Deck(){
-        ArrayList<String> suits=new ArrayList<String>();
+        this.suits=new ArrayList<String>();
         suits.add("Two");
         suits.add("Three");
         suits.add("Four");
@@ -24,13 +24,13 @@ public class Deck implements IDeck{
         suits.add("King");
         suits.add("Ace");
 
-        ArrayList<String> ranks=new ArrayList<String>();
+        this.ranks=new ArrayList<String>();
         ranks.add("Hearts");
         ranks.add("Diamonds");
         ranks.add("Spades");
         ranks.add("Clubs");
 
-        ArrayList<Card> deckOfCards = new ArrayList<Card>();
+        this.deckOfCards = new ArrayList<Card>();
         for(String rank:ranks){
             for(String suit:suits){
                 deckOfCards.add(new Card(rank,suit));
@@ -47,14 +47,22 @@ public class Deck implements IDeck{
 
     }
     
-    public String deal(){
-        return "Test";
+    public Card deal(){
+        if(deckOfCards.size()>0) {
+            Card card = deckOfCards.remove(deckOfCards.size() - 1);
+            return card;
+        }return null;
 
     }
 
 
     public void shuffle(){
 
+    }
+
+    public int getSize(){
+
+        return this.deckOfCards.size();
     }
 
 }

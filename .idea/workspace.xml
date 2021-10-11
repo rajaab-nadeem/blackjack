@@ -5,9 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1611d773-d261-4446-af0d-0ce75710db76" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/blackjack/DeckTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/blackjack/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/blackjack/App.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/blackjack/Deck.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/blackjack/Deck.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/blackjack/IDeck.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/blackjack/IDeck.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/blackjack/DeckTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/blackjack/DeckTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,9 +95,42 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="DeckTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="blackjack" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="blackjack.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="blackjack" />
+      <option name="MAIN_CLASS_NAME" value="blackjack.DeckTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DeckTest.deckSizeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="blackjack" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="blackjack.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="blackjack" />
+      <option name="MAIN_CLASS_NAME" value="blackjack.DeckTest" />
+      <option name="METHOD_NAME" value="deckSizeTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Application.App" />
+        <item itemvalue="JUnit.DeckTest.deckSizeTest" />
+        <item itemvalue="JUnit.DeckTest" />
         <item itemvalue="JUnit.CardTest" />
         <item itemvalue="JUnit.CardTest.cardStartingValue" />
       </list>

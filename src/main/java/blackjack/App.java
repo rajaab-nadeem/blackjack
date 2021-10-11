@@ -11,6 +11,8 @@ public class App
     public static void main( String[] args ){
 
         IDeck deck = new Deck();
+        deck.deal();
+
 
 
 
