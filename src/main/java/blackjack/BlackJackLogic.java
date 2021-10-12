@@ -1,15 +1,33 @@
 package blackjack;
 
+import java.util.Hashtable;
+
 public class BlackJackLogic implements IBlackJackLogic{
     private IDeck deck;
     private IHand dealer;
     private IHand player;
+    private Hashtable<String,Integer> values;
 
 
     public BlackJackLogic(IDeck deck, IHand dealer, IHand player) {
         this.deck=deck;
         this.dealer= dealer;
         this.player= player;
+
+        this.values = new Hashtable<String,Integer>();
+        this.values.put("Two",2);
+        this.values.put("Three",3);
+        this.values.put("Four",4);
+        this.values.put("Five",5);
+        this.values.put("Six",6);
+        this.values.put("Seven",7);
+        this.values.put("Eight",8);
+        this.values.put("Nine",9);
+        this.values.put("Ten",10);
+        this.values.put("Jack",10);
+        this.values.put("Queen",10);
+        this.values.put("King",10);
+        this.values.put("Ace",11);
 
 
     }
@@ -35,9 +53,11 @@ public class BlackJackLogic implements IBlackJackLogic{
 
     }
 
+
     public void stand(){
 
     }
+
 
     public void aceAdjustment(){
 
@@ -45,5 +65,13 @@ public class BlackJackLogic implements IBlackJackLogic{
 
     public boolean checkingIfWinner(){
         return true;
+    }
+
+    public int checkingForValues(Hand hand, Deck deck){
+        return 1;
+    }
+
+    public Hashtable<String, Integer> getValues() {
+        return values;
     }
 }

@@ -5,13 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1611d773-d261-4446-af0d-0ce75710db76" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/blackjack/BlackJackLogic.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/blackjack/IBlackJackLogic.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/blackjack/BleckJackLogicTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/blackjack/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/blackjack/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/blackjack/Deck.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/blackjack/Deck.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/blackjack/Hand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/blackjack/Hand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/blackjack/IHand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/blackjack/IHand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/blackjack/BlackJackLogic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/blackjack/BlackJackLogic.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/blackjack/IBlackJackLogic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/blackjack/IBlackJackLogic.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,8 +18,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -52,7 +49,7 @@
       <recent name="blackjack" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.blackjack in blackjack">
+  <component name="RunManager" selected="Application.App">
     <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="blackjack.App" />
       <module name="blackjack" />
@@ -62,6 +59,21 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BleckJackLogicTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="blackjack" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="blackjack.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="blackjack" />
+      <option name="MAIN_CLASS_NAME" value="blackjack.BleckJackLogicTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -77,22 +89,6 @@
       <option name="PACKAGE_NAME" value="blackjack" />
       <option name="MAIN_CLASS_NAME" value="blackjack.DeckTest" />
       <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="DeckTest.deckSizeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="blackjack" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="blackjack.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="blackjack" />
-      <option name="MAIN_CLASS_NAME" value="blackjack.DeckTest" />
-      <option name="METHOD_NAME" value="deckSizeTest" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -128,11 +124,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.blackjack in blackjack" />
         <item itemvalue="Application.App" />
+        <item itemvalue="JUnit.BleckJackLogicTest" />
+        <item itemvalue="JUnit.blackjack in blackjack" />
         <item itemvalue="JUnit.HandTest" />
         <item itemvalue="JUnit.DeckTest" />
-        <item itemvalue="JUnit.DeckTest.deckSizeTest" />
       </list>
     </recent_temporary>
   </component>
