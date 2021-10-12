@@ -34,4 +34,5 @@ public class Card implements ICard {
     public String getSuit(String suit) {
         return this.suit;
     }
+
 }
