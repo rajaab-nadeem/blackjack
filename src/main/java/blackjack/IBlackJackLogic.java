@@ -7,8 +7,8 @@ public interface IBlackJackLogic {
     void startingMove();
     void hit();
     void stand();
-    void aceAdjustment(Hand hand);
+    void aceAdjustment(IHand hand);
     boolean checkingIfWinner();
-    int checkingHandValues(Hand hand);
+    int checkingHandValues(IHand hand);
     Hashtable<String, Integer> getValues();
 }
