@@ -69,7 +69,7 @@ public class BlackJackLogic implements IBlackJackLogic{
 
     public int checkingHandValues(Hand hand){
         for(Card card: hand.getHandOfCards()){
-          int totalValue = hand.getValue()+ values.get(card.getRank());
+          hand.setValue(hand.getValue()+ values.get(card.getRank()));
         }
         return hand.getValue();
 
