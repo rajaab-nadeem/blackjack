@@ -12,7 +12,8 @@ public class gameFlow implements IGameFlow  {
         }
 
         public Boolean playGame(){
-            if
+            blackJackLogic.startingMove();
+
             return true;
         }
 
