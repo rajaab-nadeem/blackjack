@@ -2,14 +2,14 @@ package blackjack;
 
 import java.util.Hashtable;
 
-public class BlackJackLogic implements IBlackJackLogic{
+public class FirstMove implements IFirstMove {
     private IDeck deck;
     private IHand dealer;
     private IHand player;
     private Hashtable<String,Integer> values;
 
 
-    public BlackJackLogic(IDeck deck, IHand dealer, IHand player) {
+    public FirstMove(IDeck deck, IHand dealer, IHand player) {
         this.deck=deck;
         this.dealer= dealer;
         this.player= player;
@@ -49,21 +49,6 @@ public class BlackJackLogic implements IBlackJackLogic{
 
     }
 
-    public void hit(){
-
-    }
-
-
-    public void stand(){
-
-    }
-
-
-
-
-    public boolean checkingIfWinner(){
-        return true;
-    }
 
 
     public int checkingHandValues(IHand hand){
@@ -83,6 +68,7 @@ public class BlackJackLogic implements IBlackJackLogic{
         return hand.getValue();
 
     }
+
 
     public Hashtable<String, Integer> getValues() {
         return values;

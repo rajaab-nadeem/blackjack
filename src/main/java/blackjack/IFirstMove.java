@@ -2,12 +2,9 @@ package blackjack;
 
 import java.util.Hashtable;
 
-public interface IBlackJackLogic {
+public interface IFirstMove {
 
     void startingMove();
-    void hit();
-    void stand();
-    boolean checkingIfWinner();
     int checkingHandValues(IHand hand);
     Hashtable<String, Integer> getValues();
 }

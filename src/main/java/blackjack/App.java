@@ -1,7 +1,5 @@
 package blackjack;
 
-import java.util.ArrayList;
-
 /**
  * Hello world!
  *
@@ -13,11 +11,11 @@ public class App
    IHand dealer= new Hand("dealer");
    IHand player= new Hand("Roberto");
    IDeck deck = new Deck();
-   IBlackJackLogic game1 = new BlackJackLogic(deck,dealer,player);
+   IFirstMove game1 = new FirstMove(deck,dealer,player);
    game1.startingMove();
 
-   System.out.println(game1.checkingHandValues(player));
-
+//   System.out.println(game1.checkingHandValues(player));
+//
 
 
 

@@ -8,10 +8,10 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/blackjack/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/blackjack/App.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/blackjack/BlackJackLogic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/blackjack/BlackJackLogic.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/blackjack/Hand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/blackjack/Hand.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/blackjack/IBlackJackLogic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/blackjack/IBlackJackLogic.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/blackjack/IHand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/blackjack/IHand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/blackjack/BleckJackLogicTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/blackjack/BleckJackLogicTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/blackjack/IGameFlow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/blackjack/IGameFlow.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/blackjack/BleckJackLogicTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/blackjack/BlackJackLogicTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/blackjack/playGameTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/blackjack/playGameTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,7 +52,7 @@
       <recent name="blackjack" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.BleckJackLogicTest.getHandValueAcesCardsTest">
+  <component name="RunManager" selected="Application.App">
     <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="blackjack.App" />
       <module name="blackjack" />
@@ -81,7 +81,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BleckJackLogicTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="FirstMoveTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="blackjack" />
       <extension name="coverage">
         <pattern>
@@ -90,13 +90,13 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="blackjack" />
-      <option name="MAIN_CLASS_NAME" value="blackjack.BleckJackLogicTest" />
+      <option name="MAIN_CLASS_NAME" value="blackjack.FirstMoveTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BleckJackLogicTest.getHandValueAcesCardsTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="FirstMoveTest.getHandValueAcesCardsTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="blackjack" />
       <extension name="coverage">
         <pattern>
@@ -105,7 +105,7 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="blackjack" />
-      <option name="MAIN_CLASS_NAME" value="blackjack.BleckJackLogicTest" />
+      <option name="MAIN_CLASS_NAME" value="blackjack.FirstMoveTest" />
       <option name="METHOD_NAME" value="getHandValueAcesCardsTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
@@ -128,10 +128,10 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.BleckJackLogicTest.getHandValueAcesCardsTest" />
-        <item itemvalue="JUnit.BleckJackLogicTest" />
         <item itemvalue="Application.App" />
         <item itemvalue="JUnit.blackjack in blackjack" />
+        <item itemvalue="JUnit.FirstMoveTest" />
+        <item itemvalue="JUnit.FirstMoveTest.getHandValueAcesCardsTest" />
         <item itemvalue="JUnit.AppTest" />
       </list>
     </recent_temporary>
