@@ -16,7 +16,6 @@ public class App {
         IHand player = new Hand(name);
         IDeck deck = new Deck();
         IFirstMove firstmove= new FirstMove(deck,dealer,player);
-        deck.shuffle();
         firstmove.startingMove();
 
 

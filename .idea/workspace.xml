@@ -5,16 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1611d773-d261-4446-af0d-0ce75710db76" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/blackjack/ICheckForWinner.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/blackjack/ITotalHandValues.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/blackjack/checkForWinner.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/blackjack/totalHandValues.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/blackjack/totalHandValuesTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/blackjack/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/blackjack/App.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/blackjack/FirstMove.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/blackjack/FirstMove.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/blackjack/IFirstMove.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/blackjack/IFirstMove.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/blackjack/FirstMoveTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/blackjack/FirstMoveTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/blackjack/checkForWinner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/blackjack/checkForWinner.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,7 +52,7 @@
       <recent name="blackjack" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.blackjack in blackjack">
+  <component name="RunManager" selected="Application.App">
     <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="blackjack.App" />
       <module name="blackjack" />
@@ -134,8 +128,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.blackjack in blackjack" />
         <item itemvalue="Application.App" />
+        <item itemvalue="JUnit.blackjack in blackjack" />
         <item itemvalue="JUnit.FirstMoveTest" />
         <item itemvalue="JUnit.FirstMoveTest.getHandValueAcesCardsTest" />
         <item itemvalue="JUnit.AppTest" />

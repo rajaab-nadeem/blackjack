@@ -13,6 +13,7 @@ public class FirstMove implements IFirstMove{
 
 
         public void startingMove(){
+            deck.shuffle();
             dealer.addCard(deck.deal());
             dealer.addCard(deck.deal());
             player.addCard(deck.deal());
