@@ -36,7 +36,7 @@ public class FirstMove implements IFirstMove {
         player.addCard(deck.deal());
         player.addCard(deck.deal());
         System.out.println(player.getName() + "'" + " cards: ");
-        for (Card card : player.getHandOfCards()) {
+        for (ICard card : player.getHandOfCards()) {
             System.out.println(card.showCard());
         }
         System.out.println("\n");
@@ -60,5 +60,23 @@ public class FirstMove implements IFirstMove {
 
     public Hashtable<String, Integer> getValues() {
         return values;
+    }
+
+    public int checkingHandValues(IHand hand) {
+        for (ICard card : hand.getHandOfCards()) {
+            hand.setValue(hand.getValue() + values.get(card.getRank()));
+        }
+        while (hand.getValue() > 21) {
+            for (ICard card : hand.getHandOfCards()) {
+                if (card.getRank().equals("Ace")) {
+                    hand.setValue(hand.getValue() - 10);
+                    break;
+                }
+
+            }
+
+        }
+        return hand.getValue();
+
     }
 }

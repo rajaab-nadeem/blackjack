@@ -65,7 +65,7 @@ public class Deck implements IDeck {
     public int getDeckSuits(String suit) {
         int newVar = 0;
         for (Card newObj : this.deckOfCards) {
-            if (newObj.getSuit(suit).equals(suit)) {
+            if (newObj.getSuit().equals(suit)) {
                 newVar++;
             }
         }
@@ -77,7 +77,7 @@ public class Deck implements IDeck {
         int newVar = 0;
 
         for (Card newObj : this.deckOfCards) {
-            if (newObj.getRank(rank).equals(rank)) {
+            if (newObj.getRank().equals(rank)) {
                 newVar++;
             }
         }

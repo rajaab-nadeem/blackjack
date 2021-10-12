@@ -25,42 +25,54 @@ public class FirstMoveTest {
         assertEquals(48, deck.getSize());
     }
 
-    // @Test
-    // public void checkHandCardsWhenStay() {
+    @Test
+    public void getHandValueRegularCardsTest() {
 
-    // // Given: The initial cards have been dealt
+        // Given there is a game on and the player has a hand with two cards, "The Two
+        // Of Hearts" and "The Six Of Spades"
 
-    // IDeck deck = new Deck();
-    // IHand dealer = new Hand("Dealer");
-    // IHand player = new Hand("Rajaab");
-    // IFirstMove gameLogic = new FirstMove(deck, dealer, player);
+        IDeck deck = new Deck();
+        IHand dealer = new Hand("Dealer");
+        IHand player = new Hand("Roberto");
+        IFirstMove gameLogic = new FirstMove(deck, dealer, player);
+        ICard one = new Card("Two", "Hearts");
+        ICard two = new Card("Six", "Spades");
+        player.addCard(one);
+        player.addCard(two);
 
-    // // When: The user decides to stay
+        // When I check the value of the players hand
 
-    // gameLogic.stand();
+        gameLogic.checkingHandValues(player);
+        int value = player.getValue();
 
-    // // Then: The player's hand has 2 cards
+        // Then I see the value of 8
 
-    // assertEquals(2, player.getSize());
-    // }
+        assertEquals(8, value);
+    }
 
-    // @Test
-    // public void checkHandValueWhenStay() {
+    @Test
+    public void getHandValueAcesCardsTest() {
 
-    // // Given: The user is dealt a 2 and a 3
+        // Given there is a game on and the player has a hand with two cards of Aces,
+        // "The Ace Of Hearts" and "The Ace Of Spades"
 
-    // IDeck deck = new Deck();
-    // IHand dealer = new Hand("Dealer");
-    // IHand player = new Hand("Rajaab");
-    // IFirstMove gameLogic = new FirstMove(deck, dealer, player);
+        IDeck deck = new Deck();
+        IHand dealer = new Hand("Dealer");
+        IHand player = new Hand("Roberto");
+        IFirstMove gameLogic = new FirstMove(deck, dealer, player);
+        ICard one = new Card("Ace", "Hearts");
+        ICard two = new Card("Ace", "Spades");
+        player.addCard(one);
+        player.addCard(two);
 
-    // // When: The user decides to stay
+        // When I check the value of the players hand
 
-    // gameLogic.stand();
+        gameLogic.checkingHandValues(player);
+        int value = player.getValue();
 
-    // // Then: The value's of the player's cards is still 5
+        // Then I see the value of 12
 
-    // assertEquals(5, player.getValue());
-    // }
+        assertEquals(12, value);
+    }
 
 }
