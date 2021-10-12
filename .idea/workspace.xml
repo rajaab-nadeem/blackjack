@@ -5,10 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1611d773-d261-4446-af0d-0ce75710db76" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/blackjack/BleckJackLogicTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/blackjack/BlackJackLogic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/blackjack/BlackJackLogic.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/blackjack/Card.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/blackjack/Card.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/blackjack/Deck.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/blackjack/Deck.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/blackjack/IBlackJackLogic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/blackjack/IBlackJackLogic.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/blackjack/ICard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/blackjack/ICard.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

@@ -27,11 +27,11 @@ public class Card implements ICard {
         this.value = value;
     }
 
-    public String getRank(String rank) {
+    public String getRank() {
         return this.rank;
     }
 
-    public String getSuit(String suit) {
+    public String getSuit() {
         return this.suit;
     }
 }

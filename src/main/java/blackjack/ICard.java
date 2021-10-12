@@ -8,7 +8,7 @@ public interface ICard {
 
     void setValue(int value);
 
-    String getRank(String rank);
+    String getRank();
 
-    String getSuit(String suit);
+    String getSuit();
 }

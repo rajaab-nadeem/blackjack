@@ -4,11 +4,11 @@ import java.util.Hashtable;
 
 public interface IBlackJackLogic {
 
-    public void startingMove();
-    public void hit();
-    public void stand();
-    public void aceAdjustment();
-    public boolean checkingIfWinner();
-    int checkingForValues(Hand hand);
+    void startingMove();
+    void hit();
+    void stand();
+    void aceAdjustment(Hand hand);
+    boolean checkingIfWinner();
+    int checkingHandValues(Hand hand);
     Hashtable<String, Integer> getValues();
 }

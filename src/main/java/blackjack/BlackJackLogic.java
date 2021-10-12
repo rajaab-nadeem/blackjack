@@ -59,7 +59,7 @@ public class BlackJackLogic implements IBlackJackLogic{
     }
 
 
-    public void aceAdjustment(){
+    public void aceAdjustment(Hand hand){
 
     }
 
@@ -67,8 +67,12 @@ public class BlackJackLogic implements IBlackJackLogic{
         return true;
     }
 
-    public int checkingForValues(Hand hand, Deck deck){
-        return 1;
+    public int checkingHandValues(Hand hand){
+        for(Card card: hand.getHandOfCards()){
+          int totalValue = hand.getValue()+ values.get(card.getRank());
+        }
+        return hand.getValue();
+
     }
 
     public Hashtable<String, Integer> getValues() {
