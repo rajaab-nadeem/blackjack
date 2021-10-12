@@ -1,5 +1,7 @@
 package blackjack;
 
+import java.util.Scanner;
+
 /**
  * Hello world!
  *
@@ -7,12 +9,17 @@ package blackjack;
 
 public class App {
     public static void main(String[] args) {
-
+        Scanner input = new Scanner(System.in);
+        System.out.println("Enter your Name: ");
+        String name = input.nextLine();;
         IHand dealer = new Hand("dealer");
-        IHand player = new Hand("Roberto");
+        IHand player = new Hand(name);
         IDeck deck = new Deck();
-        IFirstMove game1 = new FirstMove(deck, dealer, player);
-        game1.startingMove();
+        IFirstMove firstmove= new FirstMove(deck,dealer,player);
+        deck.shuffle();
+        firstmove.startingMove();
+
+
 
 //   System.out.println(game1.checkingHandValues(player));
 //
