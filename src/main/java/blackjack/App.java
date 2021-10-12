@@ -15,6 +15,7 @@ public class App
    IDeck deck = new Deck();
    IBlackJackLogic game1 = new BlackJackLogic(deck,dealer,player);
    game1.startingMove();
+
    System.out.println(game1.checkingHandValues(player));
 
 

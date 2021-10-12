@@ -6,7 +6,7 @@ public class Hand implements IHand {
 
 
 
-    private ArrayList<Card> handOfCards;
+    private ArrayList<ICard> handOfCards;
     private int value;
     private String name;
 
@@ -16,12 +16,12 @@ public class Hand implements IHand {
     public Hand(String name){
         this.value=0;
         this.name=name;
-        this.handOfCards = new ArrayList<Card>();
+        this.handOfCards = new ArrayList<ICard>();
 
 
     }
 
-    public void addCard(Card card){
+    public void addCard(ICard card){
         this.handOfCards.add(card);
 
     }
@@ -38,7 +38,7 @@ public class Hand implements IHand {
         return this.handOfCards.size();
     }
 
-    public ArrayList<Card> getHandOfCards() {
+    public ArrayList<ICard> getHandOfCards() {
         return handOfCards;
     }
 
