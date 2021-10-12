@@ -40,8 +40,6 @@ public class Deck implements IDeck {
 
         }
 
-
-
     }
 
     public Card deal() {
@@ -56,7 +54,6 @@ public class Deck implements IDeck {
     public void shuffle() {
 
         Collections.shuffle(this.deckOfCards);
-
 
     }
 
