@@ -2,14 +2,14 @@ package blackjack;
 
 import java.util.Hashtable;
 
-public class totalHandValues implements ITotalHandValues {
+public class TotalHandValues implements ITotalHandValues {
     private IDeck deck;
     private IHand dealer;
     private IHand player;
     private Hashtable<String,Integer> values;
 
 
-    public totalHandValues(IDeck deck, IHand dealer, IHand player) {
+    public TotalHandValues(IDeck deck, IHand dealer, IHand player) {
         this.deck=deck;
         this.dealer= dealer;
         this.player= player;
