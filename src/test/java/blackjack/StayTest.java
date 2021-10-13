@@ -16,8 +16,9 @@ public class StayTest {
         dealer.addCard(deck.deal());
         IStay stay = new Stay();
         stay.stay(dealer,deck);
+        ITotalHandValues handValues = new TotalHandValues();
 
-        assertEquals(true,dealer.getValue()>16);
+        assertEquals(true,handValues.totalhandvalues(dealer)>16);
 
     }
 }
