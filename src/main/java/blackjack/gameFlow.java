@@ -33,21 +33,23 @@ public class gameFlow implements IGameFlow {
         boolean gameIsOn=true;
         firstMove.startingMove();
         showhands.showCards(handPlayer,handDealer);
-        checkforwinners.checkIfWinner(THValues,handDealer,handPlayer);
+
         while(gameIsOn){
+
             Scanner input = new Scanner(System.in);
             System.out.println("Do you want to Hit-(H) or Stand-(S)");
             String play = input.nextLine();
-            if(play.toLowerCase().equals("h")){
+            if(play.equals("h")){
                 hit.hit(handPlayer,deck);
                 THValues.totalhandvalues(handPlayer);
-                checkforwinners.checkIfWinner(THValues,handDealer,handPlayer);
                 showhands.showCards(handPlayer,handDealer);
+
+
             }
-            else if(play.toLowerCase().equals("s")){
+            else if(play.equals("s")){
                 stay.stay(handDealer,deck);
-                THValues.totalhandvalues(handDealer);
-                checkforwinners.checkIfWinner(THValues,handDealer,handPlayer);
+                //THValues.totalhandvalues(handDealer);
+                //heckforwinners.checkIfWinner(THValues,handDealer,handPlayer);
                 showhands.showCards(handPlayer,handDealer);
 
             }
