@@ -2,16 +2,15 @@ package blackjack;
 
 public class Stay implements IStay {
 
-    public void stay(IHand hand,IDeck deck) {
-        int handValue = hand.getValue();
-        ITotalHandValues handValues = new TotalHandValues(deck,hand);
+    public IHand stay(IHand hand, IDeck deck) {
 
-        do {
+        ITotalHandValues handValues = new TotalHandValues();
 
-            hand.addCard(deck.deal());
-        } while (handValues.totalhandvalues(hand)>16);
+    while(handValues.totalhandvalues(hand)<17)
 
+       hand.addCard(deck.deal());
 
+        return hand;
     }
 
 }
