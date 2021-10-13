@@ -3,10 +3,10 @@ package blackjack;
 public class checkForWinner implements ICheckForWinner{
 
 
-    public Boolean checkIfWinner(ITotalHandValues THValue, IHand dealer, IHand player){
+    public Boolean checkIfWinner(int dealer, int player, IHand player1){
 
 
-        if(THValue.totalhandvalues(dealer)==21 && THValue.totalhandvalues(player)==21 ){
+        if(dealer==21 && player==21 ){
             System.out.println("It is a TIE");
             return false;
 
@@ -14,22 +14,22 @@ public class checkForWinner implements ICheckForWinner{
 
         }
 
-        else if(THValue.totalhandvalues(player)==21){
-            System.out.println(player.getName() + " Wins!!!");
+        else if(player==21){
+            System.out.println(player1.getName() + " Wins!!!");
             return false;
 
 
 
         }
-        else if(THValue.totalhandvalues(player)>21){
-            System.out.println(player.getName() + " Busted!!!");
+        else if(player>21){
+            System.out.println(player1.getName() + " Busted!!!");
             return false;
 
 
 
         }
 
-        else if(THValue.totalhandvalues(dealer)>21){
+        else if(dealer>21){
             System.out.println("Dealer" + " Busted!!!");
             return false;
 
@@ -37,7 +37,7 @@ public class checkForWinner implements ICheckForWinner{
 
         }
 
-        else if(THValue.totalhandvalues(dealer)==21) {
+        else if(dealer==21) {
             System.out.println("Dealer" + " Wins!!!");
             return false;
 
@@ -45,7 +45,7 @@ public class checkForWinner implements ICheckForWinner{
         }
 
 
-        else if(THValue.totalhandvalues(dealer)==THValue.totalhandvalues(player) ){
+        else if(dealer==player){
             System.out.println("It is a TIE");
             return false;
 
@@ -53,7 +53,7 @@ public class checkForWinner implements ICheckForWinner{
 
         }
 
-        else if(THValue.totalhandvalues(dealer)>THValue.totalhandvalues(player) ){
+        else if(dealer>player ){
             System.out.println("Dealer Wins!!");
             return false;
 
@@ -61,8 +61,8 @@ public class checkForWinner implements ICheckForWinner{
 
         }
 
-        else if(THValue.totalhandvalues(dealer)<THValue.totalhandvalues(player) ){
-            System.out.println(player.getName() + "Wins!!");
+        else if(dealer<player ){
+            System.out.println(player1.getName() + "Wins!!");
             return false;
 
 

@@ -45,9 +45,12 @@ public class totalHandValuesTest {
         ITotalHandValues gameLogic = new TotalHandValues();
         ICard one = new Card("Ace","Hearts");
         ICard two = new Card("Ace","Spades");
+        ICard Three = new Card("Ace","Clubs");
+        ICard four = new Card("Eight","Clubs");
         player.addCard(one);
         player.addCard(two);
-
+        player.addCard(Three);
+        player.addCard(four);
 
         //When I check the value of the players hand
 
@@ -56,7 +59,7 @@ public class totalHandValuesTest {
 
         //Then I see the value of 12
 
-        assertEquals(12,value);
+        assertEquals(21,value);
     }
 
 }

@@ -2,5 +2,5 @@ package blackjack;
 
 public interface ICheckForWinner {
 
-    Boolean checkIfWinner(ITotalHandValues THValue,IHand hand, IHand player);
+    Boolean checkIfWinner(int dealer, int player, IHand player1);
 }
