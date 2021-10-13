@@ -44,6 +44,7 @@ public class TotalHandValues implements ITotalHandValues {
                 }
 
             }
+            break;
 
         }
         return hand.getValue();

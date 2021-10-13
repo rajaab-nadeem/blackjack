@@ -5,12 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1611d773-d261-4446-af0d-0ce75710db76" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/blackjack.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/blackjack.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/blackjack/ICheckForWinner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/blackjack/ICheckForWinner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/blackjack/Stay.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/blackjack/Stay.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/blackjack/TotalHandValues.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/blackjack/TotalHandValues.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/blackjack/checkForWinner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/blackjack/checkForWinner.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/blackjack/gameFlow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/blackjack/gameFlow.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/blackjack/totalHandValuesTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/blackjack/totalHandValuesTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -162,6 +161,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/blackjack$App.ic" NAME="App Coverage Results" MODIFIED="1634157663731" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">

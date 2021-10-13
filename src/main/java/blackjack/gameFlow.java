@@ -34,11 +34,12 @@ public class gameFlow implements IGameFlow {
                 hit.hit(handPlayer, deck);
                 showhands.showCards(handPlayer, handDealer);
             }
-            else if (play.equals("s")) {
+            if (play.equals("s")) {
                 stay.stay(handDealer, deck);
                 showhands.showCards(handPlayer, handDealer);
                 int playerHandValues=THValues.totalhandvalues(handPlayer);
                 int dealerHandValues=handDealer.getValue();
+                System.out.println(handPlayer.getValue());
                 gameIsOn = checkforwinners.checkIfWinner(dealerHandValues, playerHandValues,handPlayer);
            }
         }
