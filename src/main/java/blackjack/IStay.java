@@ -2,6 +2,6 @@ package blackjack;
 
 public interface IStay {
 
-    void stay();
+    public void stay(IHand hand,IDeck deck);
 
 }
