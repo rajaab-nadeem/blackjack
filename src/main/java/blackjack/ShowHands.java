@@ -20,6 +20,8 @@ public class ShowHands implements IShowHands {
         else {
             System.out.println(dealer.getName() + " card: ");
             System.out.println(dealer.getHandOfCards().get(dealer.getHandOfCards().size() - 1).showCard());
+
+
         }
     }
 

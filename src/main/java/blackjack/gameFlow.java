@@ -39,7 +39,8 @@ public class gameFlow implements IGameFlow {
                 showhands.showCards(handPlayer, handDealer);
                 int playerHandValues=THValues.totalhandvalues(handPlayer);
                 int dealerHandValues=handDealer.getValue();
-                System.out.println(handPlayer.getValue());
+                System.out.println(handPlayer.getName() + "-" + handPlayer.getValue());
+                System.out.println("Dealer" + "-" + handDealer.getValue());
                 gameIsOn = checkforwinners.checkIfWinner(dealerHandValues, playerHandValues,handPlayer);
            }
         }
