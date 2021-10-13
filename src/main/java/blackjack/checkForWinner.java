@@ -53,7 +53,7 @@ public class checkForWinner implements ICheckForWinner{
 
         }
 
-        if(THValue.totalhandvalues(dealer)>THValue.totalhandvalues(player) ){
+        else if(THValue.totalhandvalues(dealer)>THValue.totalhandvalues(player) ){
             System.out.println("Dealer Wins!!");
             return false;
 

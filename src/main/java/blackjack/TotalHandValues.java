@@ -36,7 +36,7 @@ public class TotalHandValues implements ITotalHandValues {
         for(ICard card: hand.getHandOfCards()){
           hand.setValue(hand.getValue()+ values.get(card.getRank()));
         }
-        while(hand.getValue()>21 ){
+        while(hand.getValue()>21 && !"Dealer".equals(hand.getName()) ){
             for(ICard card: hand.getHandOfCards()){
                 if(card.getRank().equals("Ace")){
                     hand.setValue(hand.getValue()-10);

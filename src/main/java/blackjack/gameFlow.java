@@ -14,49 +14,42 @@ public class gameFlow implements IGameFlow {
     private ICheckForWinner checkforwinners;
 
 
-    public gameFlow(IFirstMove firstMove,IDeck deck,  IHand handDealer, IHand handPlayer, ITotalHandValues THValues,IHit hit,IStay stay,IShowHands showhands,ICheckForWinner checkforwinners) {
+    public gameFlow(IFirstMove firstMove, IDeck deck, IHand handDealer, IHand handPlayer, ITotalHandValues THValues, IHit hit, IStay stay, IShowHands showhands, ICheckForWinner checkforwinners) {
 
         this.firstMove = firstMove;
         this.deck = deck;
         this.handDealer = handDealer;
         this.handPlayer = handPlayer;
-        this.THValues=THValues;
-        this.hit=hit;
-        this.stay=stay;
-        this.showhands=showhands;
-        this.checkforwinners=checkforwinners;
-
-
+        this.THValues = THValues;
+        this.hit = hit;
+        this.stay = stay;
+        this.showhands = showhands;
+        this.checkforwinners = checkforwinners;
     }
 
     public void playGame() {
-        boolean gameIsOn=true;
+        boolean gameIsOn = true;
         firstMove.startingMove();
-        showhands.showCards(handPlayer,handDealer);
+        showhands.showCards(handPlayer, handDealer);
 
-        while(gameIsOn){
+        while (gameIsOn) {
 
             Scanner input = new Scanner(System.in);
             System.out.println("Do you want to Hit-(H) or Stand-(S)");
             String play = input.nextLine();
-            if(play.equals("h")){
-                hit.hit(handPlayer,deck);
+            if (play.equals("h")) {
+                hit.hit(handPlayer, deck);
                 THValues.totalhandvalues(handPlayer);
-                showhands.showCards(handPlayer,handDealer);
-
-
-            }
-            else if(play.equals("s")){
-                stay.stay(handDealer,deck);
-                //THValues.totalhandvalues(handDealer);
-                //heckforwinners.checkIfWinner(THValues,handDealer,handPlayer);
-                showhands.showCards(handPlayer,handDealer);
+                showhands.showCards(handPlayer, handDealer);
+                //gameIsOn = checkforwinners.checkIfWinner(THValues, handDealer, handPlayer);
 
             }
-
-
+            else if (play.equals("s")) {
+                stay.stay(handDealer, deck);
+                THValues.totalhandvalues(handDealer);
+                showhands.showCards(handPlayer, handDealer);
+//               gameIsOn = checkforwinners.checkIfWinner(THValues, handDealer, handPlayer);
+           }
         }
-
     }
-
 }
