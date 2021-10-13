@@ -5,12 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1611d773-d261-4446-af0d-0ce75710db76" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/blackjack/IShowHands.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/blackjack/ShowHands.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/blackjack/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/blackjack/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/blackjack/gameFlow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/blackjack/gameFlow.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/blackjack/totalHandValues.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/blackjack/TotalHandValues.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/blackjack/FirstMove.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/blackjack/FirstMove.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/blackjack/IShowHands.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/blackjack/IShowHands.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/blackjack/ShowHands.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/blackjack/ShowHands.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/blackjack/TotalHandValues.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/blackjack/TotalHandValues.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/blackjack/checkForWinner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/blackjack/checkForWinner.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/blackjack/totalHandValuesTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/blackjack/totalHandValuesTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -55,7 +56,7 @@
       <recent name="blackjack" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.App">
+  <component name="RunManager" selected="JUnit.blackjack in blackjack">
     <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="blackjack.App" />
       <module name="blackjack" />
@@ -131,8 +132,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.App" />
         <item itemvalue="JUnit.blackjack in blackjack" />
+        <item itemvalue="Application.App" />
         <item itemvalue="JUnit.FirstMoveTest" />
         <item itemvalue="JUnit.FirstMoveTest.getHandValueAcesCardsTest" />
         <item itemvalue="JUnit.AppTest" />

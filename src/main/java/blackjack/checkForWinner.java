@@ -9,9 +9,12 @@ public class checkForWinner implements ICheckForWinner{
 
 
         }
-        else if(THValue.totalhandvalues(dealer)<21 && THValue.totalhandvalues(dealer)>=17){
+        if(THValue.totalhandvalues(player)>21){
+            System.out.println(player.getName() + "Busted!!!");
+
 
         }
+
 
     }
 

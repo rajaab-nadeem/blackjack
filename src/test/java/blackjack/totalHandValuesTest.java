@@ -16,7 +16,7 @@ public class totalHandValuesTest {
         IDeck deck =new Deck();
         IHand dealer = new Hand("Dealer");
         IHand player= new Hand("Roberto");
-        ITotalHandValues gameLogic = new TotalHandValues(deck,dealer,player);
+        ITotalHandValues gameLogic = new TotalHandValues();
         ICard one = new Card("Two","Hearts");
         ICard two = new Card("Six","Spades");
         player.addCard(one);
@@ -42,7 +42,7 @@ public class totalHandValuesTest {
         IDeck deck =new Deck();
         IHand dealer = new Hand("Dealer");
         IHand player= new Hand("Roberto");
-        ITotalHandValues gameLogic = new TotalHandValues(deck,dealer,player);
+        ITotalHandValues gameLogic = new TotalHandValues();
         ICard one = new Card("Ace","Hearts");
         ICard two = new Card("Ace","Spades");
         player.addCard(one);
