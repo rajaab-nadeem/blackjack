@@ -9,8 +9,18 @@ public class ShowHands implements IShowHands {
             System.out.println(card.showCard());
         }
         System.out.println("\n");
-        System.out.println(dealer.getName() + " card: ");
-        System.out.println(dealer.getHandOfCards().get(dealer.getHandOfCards().size() - 1).showCard());
+
+        if(dealer.getSize()>2){
+            System.out.println(dealer.getName() + " card: ");
+            for (ICard card : dealer.getHandOfCards()) {
+                System.out.println(card.showCard());
+            }
+
+        }
+        else {
+            System.out.println(dealer.getName() + " card: ");
+            System.out.println(dealer.getHandOfCards().get(dealer.getHandOfCards().size() - 1).showCard());
+        }
     }
 
 }

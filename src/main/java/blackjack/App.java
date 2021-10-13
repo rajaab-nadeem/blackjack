@@ -11,14 +11,19 @@ public class App {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         System.out.println("Enter your Name: ");
-        String name = input.nextLine();;
+        String name = input.nextLine();
         IHand dealer = new Hand("Dealer");
         IHand player = new Hand(name);
         IDeck deck = new Deck();
         IShowHands showhands = new ShowHands();
         IFirstMove firstmove= new FirstMove(deck,dealer,player);
-        firstmove.startingMove();
-        showhands.showCards(player,dealer);
+        ITotalHandValues THValues =new TotalHandValues();
+        IHit hit = new Hit();
+        IStay stay = new Stay();
+        ICheckForWinner checkforwinner = new checkForWinner();
+        IGameFlow BlackJackGame = new gameFlow(firstmove,deck,dealer,player,THValues,hit,stay,showhands,checkforwinner);
+        BlackJackGame.playGame();
+
 
 
 

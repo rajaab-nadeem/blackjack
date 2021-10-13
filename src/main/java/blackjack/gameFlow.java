@@ -1,5 +1,7 @@
 package blackjack;
 
+import java.util.Scanner;
+
 public class gameFlow implements IGameFlow {
     private IDeck deck;
     private IFirstMove firstMove;
@@ -28,8 +30,29 @@ public class gameFlow implements IGameFlow {
     }
 
     public void playGame() {
-        deck.shuffle();
+        boolean gameIsOn=true;
         firstMove.startingMove();
+        while(gameIsOn){
+            showhands.showCards(handPlayer,handDealer);
+            Scanner input = new Scanner(System.in);
+            System.out.println("Do you want to Hit-(H) or Stand-(S)");
+            String play = input.nextLine();
+            if(play.toLowerCase().equals("h")){
+                this.hit.hit(handPlayer,deck);
+                this.THValues.totalhandvalues(handPlayer);
+                this.checkforwinners.checkIfWinner(THValues,handDealer,handPlayer);
+                this.showhands.showCards(handPlayer,handDealer);
+            }
+            else if(play.toLowerCase().equals("s")){
+                this.stay.stay(handDealer,deck);
+                this.THValues.totalhandvalues(handDealer);
+                this.checkforwinners.checkIfWinner(THValues,handDealer,handPlayer);
+                this.showhands.showCards(handPlayer,handDealer);
+
+            }
+
+
+        }
 
     }
 
