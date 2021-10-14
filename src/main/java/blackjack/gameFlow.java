@@ -33,6 +33,7 @@ public class gameFlow implements IGameFlow {
                 System.out.println(handPlayer.getName() + "-" + handPlayer.getValue());
                 System.out.println("Dealer" + "-" + handDealer.getValue());
                 gameIsOn = checkforwinners.checkIfWinner(dealerHandValues, playerHandValues,handPlayer);
+
            }
         }
     }

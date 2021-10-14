@@ -1,0 +1,18 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Launch App",
+            "request": "launch",
+            "mainClass": "blackjack.App",
+            "projectName": "blackjack"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Launch",
+            "console": "integratedTerminal",
+            "program": "${file}"
+        }
+    ]
+}

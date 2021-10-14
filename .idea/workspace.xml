@@ -5,9 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1611d773-d261-4446-af0d-0ce75710db76" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.vscode/launch.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/blackjack/Bet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/blackjack/IBet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/blackjack/BetTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/blackjack/Stay.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/blackjack/Stay.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/blackjack/Hand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/blackjack/Hand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/blackjack/IHand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/blackjack/IHand.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/blackjack/TotalHandValues.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/blackjack/TotalHandValues.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/blackjack/gameFlow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/blackjack/gameFlow.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/blackjack/WagerTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/blackjack/totalHandValuesTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/blackjack/totalHandValuesTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -131,9 +139,9 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.App" />
+        <item itemvalue="JUnit.blackjack in blackjack" />
         <item itemvalue="JUnit.totalHandValuesTest" />
         <item itemvalue="JUnit.totalHandValuesTest.getHandValueAcesCardsTest" />
-        <item itemvalue="JUnit.blackjack in blackjack" />
         <item itemvalue="JUnit.FirstMoveTest" />
       </list>
     </recent_temporary>
