@@ -7,11 +7,13 @@ public class Stay implements IStay {
 
         ITotalHandValues handValues = new TotalHandValues();
 
-        do {
-            hand.addCard(deck.deal());
+       int handTotal= hand.getValue();
 
+       while(handTotal<16){
+           hand.addCard(deck.deal());
+           handTotal=handValues.totalhandvalues(hand);
+       }
 
-        }while(handValues.totalhandvalues(hand)<16);
 
 
 
