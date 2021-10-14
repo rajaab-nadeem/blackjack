@@ -14,6 +14,7 @@ public class App {
         String name = input.nextLine();
         IHand dealer = new Hand("Dealer");
         IHand player = new Hand(name);
+        IContinuePlay play = new ContinuePlay();
         IDeck deck = new Deck();
         IShowHands showhands = new ShowHands();
         IFirstMove firstmove= new FirstMove(deck,dealer,player);
@@ -21,7 +22,7 @@ public class App {
         IHit hit = new Hit();
         IStay stay = new Stay();
         ICheckForWinner checkforwinner = new checkForWinner();
-        IGameFlow BlackJackGame = new gameFlow(firstmove,deck,dealer,player,THValues,hit,stay,showhands,checkforwinner);
+        IGameFlow BlackJackGame = new gameFlow(firstmove,deck,dealer,player,THValues,hit,stay,showhands,checkforwinner,play);
         BlackJackGame.playGame();
 
 
