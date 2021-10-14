@@ -10,9 +10,9 @@ public class gameFlow implements IGameFlow {
     private IStay stay;
     private IShowHands showhands;
     private ICheckForWinner checkforwinners;
-    private IContinuePlay cplay;
-    public gameFlow(IFirstMove firstMove, IDeck deck, IHand handDealer, IHand handPlayer, ITotalHandValues THValues, IHit hit, IStay stay, IShowHands showhands, ICheckForWinner checkforwinners, IContinuePlay cplay) {
-        this.firstMove = firstMove;this.deck = deck;this.handDealer = handDealer;this.handPlayer = handPlayer;this.THValues = THValues;this.hit = hit;this.stay = stay;this.showhands = showhands;this.checkforwinners = checkforwinners; this.cplay = cplay;}
+    //private IContinuePlay cplay;
+    public gameFlow(IFirstMove firstMove, IDeck deck, IHand handDealer, IHand handPlayer, ITotalHandValues THValues, IHit hit, IStay stay, IShowHands showhands, ICheckForWinner checkforwinners) {
+        this.firstMove = firstMove;this.deck = deck;this.handDealer = handDealer;this.handPlayer = handPlayer;this.THValues = THValues;this.hit = hit;this.stay = stay;this.showhands = showhands;this.checkforwinners = checkforwinners;}
 
     public void playGame() {
         boolean gameIsOn = true;
@@ -34,7 +34,7 @@ public class gameFlow implements IGameFlow {
                 System.out.println(handPlayer.getName() + "-" + handPlayer.getValue());
                 System.out.println("Dealer" + "-" + handDealer.getValue());
                 checkforwinners.checkIfWinner(dealerHandValues, playerHandValues,handPlayer);
-                gameIsOn = cplay.play(handPlayer);
+                //gameIsOn = cplay.play(handPlayer);
 
             }
 

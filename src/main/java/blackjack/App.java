@@ -22,7 +22,7 @@ public class App {
         IHit hit = new Hit();
         IStay stay = new Stay();
         ICheckForWinner checkforwinner = new checkForWinner();
-        IGameFlow BlackJackGame = new gameFlow(firstmove,deck,dealer,player,THValues,hit,stay,showhands,checkforwinner,play);
+        IGameFlow BlackJackGame = new gameFlow(firstmove,deck,dealer,player,THValues,hit,stay,showhands,checkforwinner);
         BlackJackGame.playGame();
 
 
