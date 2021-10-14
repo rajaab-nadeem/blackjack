@@ -10,7 +10,9 @@ public class Stay implements IStay {
        int handTotal= hand.getValue();
 
        while(handTotal<16){
+
            hand.addCard(deck.deal());
+
            handTotal=handValues.totalhandvalues(hand);
        }
 
