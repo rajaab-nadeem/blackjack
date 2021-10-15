@@ -28,12 +28,11 @@ public class gameFlow implements IGameFlow {
             handPlayer.setValue(0);
             handDealer.setValue(0);
             Scanner betq = new Scanner(System.in);
-            System.out.println(handPlayer.getName()+ "You have "+ handPlayer.getChips()+ " Chips" + " How many Chips do you want to bet? : ");
+            System.out.println(handPlayer.getName()+ " You have "+ handPlayer.getChips()+ ". Chips" + " How many Chips do you want to bet? : ");
             Integer betqq = betq.nextInt();
             playerbet.makeBet(betqq);
             firstMove.startingMove();
             showhands.showCards(handPlayer, handDealer);
-
             boolean gameIsOn = true;
         while (gameIsOn) {
             Scanner input = new Scanner(System.in);

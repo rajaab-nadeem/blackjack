@@ -26,20 +26,30 @@ public class TotalHandValues implements ITotalHandValues {
     }
 
     public int totalhandvalues(IHand hand) {
+
+
+
+
         for (ICard card : hand.getHandOfCards()) {
             hand.setValue(hand.getValue() + values.get(card.getRank()));
         }
-        while (hand.getValue() > 21 && !"Dealer".equals(hand.getName())) {
+
             for (ICard card : hand.getHandOfCards()) {
-                if (card.getRank().equals("Ace")) {
+                if ( (hand.getValue() > 21 && !"Dealer".equals(hand.getName())) &&  (card.getRank().equals("Ace"))) {
                     hand.setValue(hand.getValue() - 10);
-                    break;
+
                 }
+
 
             }
 
 
-        }
+
+
+
+
+
+
         return hand.getValue();
 
     }
