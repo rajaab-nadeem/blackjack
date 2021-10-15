@@ -8,7 +8,7 @@ public class checkForWinner implements ICheckForWinner{
 
         if(dealer==21 && player==21 ){
             System.out.println("It is a TIE");
-            return false;
+            return true;
 
 
 
@@ -16,14 +16,14 @@ public class checkForWinner implements ICheckForWinner{
 
         if(player==21){
             System.out.println(player1.getName() + " Wins!!!");
-            return false;
+            return true;
 
 
 
         }
         if(player>21){
             System.out.println(player1.getName() + " Busted!!!");
-            return false;
+            return true;
 
 
 
@@ -31,7 +31,7 @@ public class checkForWinner implements ICheckForWinner{
 
         if(dealer>21){
             System.out.println("Dealer" + " Busted!!!");
-            return false;
+            return true;
 
 
 
@@ -39,7 +39,7 @@ public class checkForWinner implements ICheckForWinner{
 
         if(dealer==21) {
             System.out.println("Dealer" + " Wins!!!");
-            return false;
+            return true;
 
 
         }
@@ -47,7 +47,7 @@ public class checkForWinner implements ICheckForWinner{
 
         if(dealer==player){
             System.out.println("It is a TIE");
-            return false;
+            return true;
 
 
 
@@ -55,7 +55,7 @@ public class checkForWinner implements ICheckForWinner{
 
         if(dealer>player ){
             System.out.println("Dealer Wins!!");
-            return false;
+            return true;
 
 
 
@@ -63,7 +63,7 @@ public class checkForWinner implements ICheckForWinner{
 
         if(dealer<player ){
             System.out.println(player1.getName() + " Wins!!");
-            return false;
+            return true;
 
 
 
