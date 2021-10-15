@@ -5,10 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1611d773-d261-4446-af0d-0ce75710db76" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/blackjack/ContinuePlay.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/blackjack/IContinuePlay.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/blackjack/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/blackjack/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/blackjack/ICheckForWinner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/blackjack/ICheckForWinner.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/blackjack/checkForWinner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/blackjack/checkForWinner.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/blackjack/gameFlow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/blackjack/gameFlow.java" afterDir="false" />
     </list>
@@ -134,8 +133,8 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.App" />
-        <item itemvalue="JUnit.blackjack in blackjack" />
         <item itemvalue="JUnit.totalHandValuesTest" />
+        <item itemvalue="JUnit.blackjack in blackjack" />
         <item itemvalue="JUnit.totalHandValuesTest.getHandValueAcesCardsTest" />
         <item itemvalue="JUnit.FirstMoveTest" />
       </list>

@@ -3,12 +3,12 @@ package blackjack;
 public class checkForWinner implements ICheckForWinner{
 
 
-    public Boolean checkIfWinner(int dealer, int player, IHand player1){
+    public Boolean checkIfWinner(int dealer, int player, IHand player1,IBet betplayer){
 
 
         if(dealer==21 && player==21 ){
             System.out.println("It is a TIE");
-            return true;
+            return false;
 
 
 
@@ -16,14 +16,16 @@ public class checkForWinner implements ICheckForWinner{
 
         if(player==21){
             System.out.println(player1.getName() + " Wins!!!");
-            return true;
+            betplayer.winBet();
+            return false;
 
 
 
         }
         if(player>21){
             System.out.println(player1.getName() + " Busted!!!");
-            return true;
+            betplayer.loseBet();
+            return false;
 
 
 
@@ -31,7 +33,8 @@ public class checkForWinner implements ICheckForWinner{
 
         if(dealer>21){
             System.out.println("Dealer" + " Busted!!!");
-            return true;
+            betplayer.winBet();
+            return false;
 
 
 
@@ -39,7 +42,8 @@ public class checkForWinner implements ICheckForWinner{
 
         if(dealer==21) {
             System.out.println("Dealer" + " Wins!!!");
-            return true;
+            betplayer.loseBet();
+            return false;
 
 
         }
@@ -47,7 +51,7 @@ public class checkForWinner implements ICheckForWinner{
 
         if(dealer==player){
             System.out.println("It is a TIE");
-            return true;
+            return false;
 
 
 
@@ -55,7 +59,8 @@ public class checkForWinner implements ICheckForWinner{
 
         if(dealer>player ){
             System.out.println("Dealer Wins!!");
-            return true;
+            betplayer.loseBet();
+            return false;
 
 
 
@@ -63,13 +68,14 @@ public class checkForWinner implements ICheckForWinner{
 
         if(dealer<player ){
             System.out.println(player1.getName() + " Wins!!");
-            return true;
+            betplayer.winBet();
+            return false;
 
 
 
         }
         else{
-            return true;
+            return false;
         }
 
 
